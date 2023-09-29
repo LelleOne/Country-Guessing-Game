@@ -1,0 +1,19 @@
+html{
+    background-color: rgb(41, 41, 41);
+}
+
+body{
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    margin-left: 40vw;
+}
+
+p{
+    user-select: none;
+}
+
+label{
+    user-select: none;
+}
