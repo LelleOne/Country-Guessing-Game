@@ -3,6 +3,9 @@ const guessSubmit = document.querySelector('.guessSubmit');
 let hints = 1;
 let resetButton
 let guessCount = 0;
+let winAudio = Audio('assets/yay.mp3');
+let skillIssue = Audio('assets/noo.mp3');
+
 
 const Countries = [
     "albania",
@@ -54,6 +57,7 @@ const Countries = [
   ];
   
   const random = Math.floor(Math.random() * Countries.length);
+  const randomCountry = (random, Countries[random]);
 
   console.log(random, Countries[random]);
 
@@ -64,5 +68,8 @@ function checkGuess(){
     if(guessCount === 0){
         guessCount.textContent = 'Ermmm'
     }
-    
+
+    if(userGuess === randomCountry){
+        winAudio.play();
+    }
 }
