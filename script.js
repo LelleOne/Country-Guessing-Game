@@ -1,5 +1,6 @@
 
 const guessSubmit = document.querySelector('.guessSubmit'); 
+const yeh = document.querySelector('.Erm')
 let hints = 1;
 let resetButton
 let guessCount = 0;
@@ -71,5 +72,8 @@ function checkGuess(){
 
     if(userGuess === randomCountry){
         winAudio.play();
+        yeh.style.backgroundColor = 'green';
+        yeh.style.textContent = 'Well done you got it right'
+        setGameOver();
     }
 }

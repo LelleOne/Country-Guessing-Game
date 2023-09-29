@@ -17,3 +17,8 @@ p{
 label{
     user-select: none;
 }
+
+.Erm{
+    color:rgb(94, 94, 94);
+    padding: 3px;
+}
