@@ -12,13 +12,19 @@ body{
 
 p{
     user-select: none;
+    color: rgb(219, 219, 219);
 }
 
 label{
     user-select: none;
+    color: rgb(219, 219, 219);
 }
 
 .Erm{
     color:rgb(94, 94, 94);
     padding: 3px;
+}
+
+h1{
+    color: rgb(219, 219, 219);
 }
