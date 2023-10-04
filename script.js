@@ -7,8 +7,8 @@ const guessField = document.querySelector('.guessField');
 let hints = 1;
 let resetButton;
 let guessCount = 0;
-let winAudio = new Audio('assets/yay.mp3');
-let skillIssue = new Audio('assets/noo.mp3');
+let winAudio = new Audio('sounds/yay.mp3');
+let skillIssue = new Audio('sounds/noo.mp3');
 
 
 const Countries = [
@@ -149,7 +149,7 @@ const Countries = [
     "A glamorous city-state known for its luxury and casinos.",
 
     // Netherlands
-    "A Balkan country with a stunning Adriatic coastline and mountainous terrain.",
+    "This country is known for its flat landscape, extensive canal systems, and iconic windmills.",
 
     // North Macedonia
     "Known for its picturesque canals, tulip fields, and cycling culture.",
@@ -207,7 +207,7 @@ const Countries = [
   console.log(randomCountry);
   console.log(randomFact);
   hintText.textContent = randomFact;
-  hintText.style.color = 'green';
+  hintText.style.color = 'rgb(219, 219, 219)';
 
 
 function checkGuess(){
@@ -216,7 +216,6 @@ function checkGuess(){
 
     if(guessCount === 0){
         yeh.textContent = 'Ermmm'
-        
     }
     
     if(submitedGuess === randomCountry){
